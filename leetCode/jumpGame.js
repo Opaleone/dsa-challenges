@@ -13,22 +13,21 @@ Return true if you can reach the last index, or false otherwise.
  * @return {boolean}
  */
 
-var canJump = function(nums) {
-
+var canJump = function (nums) {
   if (nums.length <= 1) return true;
 
   let max = nums[0];
 
   for (let i = 0; i < nums.length; i++) {
-      if (max <= i && nums[i] === 0) {
-          return false;
-      } else if (i + nums[i] > max) {
-          max = i + nums[i];
-      }
+    if (max <= i && nums[i] === 0) {
+      return false;
+    } else if (i + nums[i] > max) {
+      max = i + nums[i];
+    }
 
-      if (max >= nums.length - 1) {
-          return true;
-      }
+    if (max >= nums.length - 1) {
+      return true;
+    }
   }
   return false;
 };
