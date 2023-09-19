@@ -26,6 +26,13 @@ class TreeNode {
   }
 }
 
+const root = new TreeNode(1);
+const two = new TreeNode(2);
+const three = new TreeNode(3);
+
+root.right = two;
+two.left = three;
+
   // Recursive solution
 
   const inorderTraversal = (root) => {
@@ -74,3 +81,5 @@ class TreeNode {
 
 //   return values;
 // }
+
+console.log(inorderTraversal(root));
