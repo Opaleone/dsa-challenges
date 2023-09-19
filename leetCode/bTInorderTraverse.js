@@ -35,7 +35,7 @@ two.left = three;
 
   // Recursive solution
 
-  const inorderTraversal = (root) => {
+const inorderTraversal = (root) => {
   // This initializes our return array
   const values = [];
 
@@ -66,10 +66,10 @@ two.left = three;
 //   const stack = [];
 //   let current = root;
 
-//   while (current || stack) {
+//   while (current || stack.length) {
 //     // If current !== null, continue down the tree
 //     if (current) {
-//       values.push(current);
+//       stack.push(current);
 //       current = current.left;
 //     } else {
 //     // Else push all values from from stack to return array and continue down the right side
