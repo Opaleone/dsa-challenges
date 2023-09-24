@@ -4,6 +4,8 @@
 // You may not use the `indexOf`, `lastIndexOf` or `includes` methods
 
 var linearSearch = function(arr, target) {
+  // LINEAR SEARCH 
+  //    BEST IF ARRAY NOT SORTED
   for (let i = 0; i < arr.length; i++) {
     if (arr[i] === target) {
       return i;
@@ -12,7 +14,11 @@ var linearSearch = function(arr, target) {
 
   return -1;
 
-// BINARY SEARCH
+  // BINARY SEARCH
+  //    ARRAY MUST BE SORTED FOR THIS TO WORK
+
+  // arr.sort((a, b) => a - b)
+
   // let l = 0;
   // let r = arr.length - 1;
 
