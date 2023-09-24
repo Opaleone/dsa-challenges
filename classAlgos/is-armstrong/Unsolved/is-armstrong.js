@@ -5,4 +5,14 @@
 
 // TODO: Complete the function below:
 
-var isArmstrong = function(num) {};
+var isArmstrong = function(num) {
+  const numStr = num.toString().split('');
+  let sum = 0;
+
+  for (let i = 0; i < numStr.length; i++) {
+    sum += (numStr[i] ** numStr.length);
+  }
+
+  if (sum === num) return true;
+  else return false;
+};
