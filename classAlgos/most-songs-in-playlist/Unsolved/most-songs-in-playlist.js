@@ -4,4 +4,18 @@
 
 var mostSongsInPlaylist = function(arr) {
   // add your code here...
+  arr.sort((a, b) => a - b)
+  let time = 0;
+  let songs = 0;
+
+  for (let i = 0; i < arr.length; i++) {
+    if (time + arr[i] <= 60) {
+      time += arr[i];
+      songs++;
+    } else {
+      return songs;
+    }
+  }
+
+  return songs;
 };
