@@ -37,4 +37,22 @@ describe("oneEditAway", function() {
     expect(result).to.eql(false);
   });
 
+  it(`should return true if given the strings "Hell" and "Hello that are ONE edit apart`, function() {
+    const str1 = 'Hell';
+    const str2 = 'Helo';
+
+    const result = oneEditAway(str1, str2);
+
+    expect(result).to.eql(true);
+  });
+
+  it(`should return true if given the strings "Unfortunately" and "Unfortunate" that are MORE THAN ONE edit apart`, function() {
+    const str1 = 'Unfortunately';
+    const str2 = 'Unfortunate';
+
+    const result = oneEditAway(str1, str2);
+
+    expect(result).to.eql(false);
+  });
+
 });
