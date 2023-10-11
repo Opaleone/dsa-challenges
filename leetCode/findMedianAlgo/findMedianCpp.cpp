@@ -3,7 +3,7 @@
 using namespace std;
 
 vector<int> nums1 = {1,2,3,5,7,8,9,10,13,15,16,17,19,65,77,79,80,99,101,104,108};
-vector<int> nums2 = {2,66,88,96};
+vector<int> nums2 = {2,66,88,96,109};
 
 double findMedianSortedArrays(vector<int>& nums1, vector<int>& nums2) {
   vector<int> merged;
