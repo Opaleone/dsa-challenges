@@ -16,20 +16,19 @@ for (let i = 0; i < addLength; i++) {
 
 const oneEditAway = function(str1, str2) {
 // TODO: Write function that takes in two strings and returns true if one character away, otherwise false
-let charCnt = 0;
 
-console.log(str1.length)
-console.log(str2.length)
+// My solution
+  let charCnt = 0;
 
-const length = (str1.length > str2.length) ? str1.length : str2.length;
+  const length = (str1.length > str2.length) ? str1.length : str2.length;
 
-for (let i = 0; i < length; i++) {
-  if (str1[i] !== str2[i]) {
-    charCnt++;
+  for (let i = 0; i < length; i++) {
+    if (str1[i] !== str2[i]) {
+      charCnt++;
+    }
   }
-}
 
-return charCnt === 1;
+  return charCnt === 1;
 }
 
 const oneEditAwaySol = function(str1, str2) {
