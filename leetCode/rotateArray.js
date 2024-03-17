@@ -15,7 +15,7 @@ const nums = [1,2,3,4,5,6,7], k = 3;
  * @param {number} k
  * @return {void} Do not return anything, modify nums in-place instead.
  */
-var rotate = function(nums, k) {
+const rotate = (nums, k) => {
   // My initial solution but too slow for proper submit
   // for (let i = 0; i < k; i++) {
   //   const curNum = nums.pop();
